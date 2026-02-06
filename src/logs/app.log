@@ -9278,3 +9278,514 @@
 {"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 11:07:20"}
 {"level":"info","message":"Executed query: { text: SELECT id, name, email, password_hash, role FROM users WHERE email = $1..., params: [\"kyrios@gmail.com\"], duration: 5867ms, rows: 1}","timestamp":"2026-02-05 11:07:25"}
 {"level":"info","message":"JWT generated successfully for user: kyrios@gmail.com (ID: 9b28928d-d35f-4d19-8ec3-5ebea953caa9)","timestamp":"2026-02-05 11:07:25"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 11:19:06"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 11:19:12"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 11:19:13"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 11:19:13"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 11:19:13"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:02:19"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:02:29"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:02:29"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:02:29"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:02:29"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:10:12"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:10:14"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:10:14"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:10:14"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:10:14"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:11:30"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:11:32"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:11:32"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:11:32"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:11:32"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:12:15"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:12:18"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:12:18"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:12:18"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:12:18"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:12:48"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:12:48"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:12:48"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:12:48"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:12:48"}
+                                                                                                                                                                     {"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:12:51"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:12:51"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:12:51"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:12:51"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:12:51"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:12:52"}
+                                                                                                                                                                                                                                                                                                                                                                                                                            {"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:12:53"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:12:53"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:12:53"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:12:53"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:12:53"}
+                                                                                                                                                                     {"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:12:54"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:12:54"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:12:55"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:12:55"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:12:55"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:12:55"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:12:55"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:12:55"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:12:55"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:12:55"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:12:58"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:12:58"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:12:58"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:12:58"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:12:58"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:12:59"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:12:59"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:12:59"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:12:59"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:12:59"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:00"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:00"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:00"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:00"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:00"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:01"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:01"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:01"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:01"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:01"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:03"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:03"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:03"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:03"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:03"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:05"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:05"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:05"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:05"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:05"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:06"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:06"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:06"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:06"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:06"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:07"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:07"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:07"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:07"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:07"}
+                                                                                                                                                                     {"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:08"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:08"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:08"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:08"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:08"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:09"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:09"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:10"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:10"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:10"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:10"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:10"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:10"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:10"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:10"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:10"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:10"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:10"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:10"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:10"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:12"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:12"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:12"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:12"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:12"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:13"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:13"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:13"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:13"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:13"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:13"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:13"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:13"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:13"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:13"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:18"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:18"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:18"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:18"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:18"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:19"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:19"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:19"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:19"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:19"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:21"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:21"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:21"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:21"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:21"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:22"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:22"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:22"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:22"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:22"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:22"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:22"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:22"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:22"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:23"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:29"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:29"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:30"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:30"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:30"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:53"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:53"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:53"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:53"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:53"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:54"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:54"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:54"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:54"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:54"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:55"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:55"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:55"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:55"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:55"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:56"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:57"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:57"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:57"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:57"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:13:57"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:13:57"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:13:57"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:13:57"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:13:57"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:14:00"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:14:00"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:14:00"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:14:00"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:14:00"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:14:02"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:14:02"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:14:02"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:14:02"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:14:02"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:14:09"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:14:09"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:14:09"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:14:09"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:14:09"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:14:10"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:14:11"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:14:11"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:14:11"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:14:11"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:14:11"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:14:12"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:14:13"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:14:13"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:14:13"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:14:13"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:14:14"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:14:14"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:14:14"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:14:14"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:14:14"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:14:15"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:14:15"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:14:15"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:14:16"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:14:16"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:14:16"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:14:16"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:14:16"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:14:16"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:14:16"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:14:16"}
+                                                                                                                                                                                                  {"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:14:17"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:14:17"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:14:17"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:14:17"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:14:17"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:14:19"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:14:19"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:14:19"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:14:19"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:14:19"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:14:37"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:14:37"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:14:37"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:14:37"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:14:37"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:14:39"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:14:39"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:14:39"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:14:39"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:14:39"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:14:52"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:14:52"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:14:53"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:14:53"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:14:53"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:14:54"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:14:54"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:14:54"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:14:54"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:14:54"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:14:54"}
+                                                                                     Ó~	íî`Ñ2;ËoŽ/û¦8v	RŽ›éäW§Â ¡oWW4ázÖE´g§õŸï–IÕ¹~þû®Syu´¸v»µ‰‘Ûñ£©ÐVÝ’@L4ÙZAÜK:^ÞÆØX{§T([B-q·O¦3“¾Bš¼8ôÅ¨\øËx$­ž¼q]P¿Z*¥x½+áå>ÅÆb”3?cABæÌûá 
+Îä±@B{oá1(úEDDõ¢°ëƒ¡Ò·r$ài˜*v‘‹1»ñ•wÎo%s2bÛAþ[ÈŸ:$ ª‘t¿†&üLˆ¶¢å,×\Z1[ˆG®`-ÎìîÆÌ&ØkÙ*¾95ç­¤‹‘Ê˜Ð0,xŠx½ÎÖc«fpyß‡Aþ´=&‚xÝ1Ÿ;‚÷6;„›µÐ=ÁPºëÿ{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:14:55"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:14:55"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:14:55"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:14:55"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:14:55"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:15:24"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:15:25"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:15:25"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:15:25"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:15:25"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:15:29"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:15:29"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:15:29"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:15:29"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:15:29"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:15:30"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:15:30"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:15:30"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:15:30"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:15:30"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:15:32"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:15:32"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:15:32"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:15:32"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:15:32"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:15:33"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:15:33"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:15:33"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:15:33"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:15:33"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:15:34"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:15:35"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:15:35"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:15:35"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:15:35"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:15:35"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:15:35"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:15:35"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:15:35"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:15:35"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:15:36"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:15:36"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:15:36"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:15:36"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:15:36"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:15:38"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:15:38"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:15:38"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:15:38"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:15:38"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:15:39"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:15:39"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:15:39"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:15:39"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:15:39"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:15:39"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:15:40"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:15:40"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:15:40"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:15:40"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:15:41"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:15:41"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:15:41"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:15:41"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:15:41"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:15:42"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:15:42"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:15:42"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:15:42"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:15:42"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:15:43"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:15:43"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:15:44"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:15:44"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:15:44"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:15:47"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:15:47"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:15:47"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:15:47"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:15:47"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:15:48"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:15:48"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:15:48"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:15:48"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:15:48"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:15:51"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:15:51"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:15:51"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:15:51"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:15:51"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:15:52"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:15:52"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:15:52"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:15:52"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:15:52"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:15:54"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:15:54"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:15:54"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:15:54"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:15:54"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:15:58"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:15:58"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:15:58"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:15:58"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:15:58"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:15:58"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:15:59"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:15:59"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:15:59"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:15:59"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:15:59"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:15:59"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:15:59"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:15:59"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:15:59"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:16:00"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:16:00"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:16:00"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:16:00"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:16:00"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:16:01"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:16:01"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:16:01"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:16:01"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:16:01"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:16:03"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:16:03"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:16:03"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:16:03"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:16:03"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:16:04"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:16:04"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:16:04"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:16:04"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:16:04"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:16:05"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:16:05"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:16:05"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:16:05"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:16:05"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:16:06"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:16:06"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:16:06"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:16:06"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:16:06"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:19:42"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:19:43"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:19:44"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:19:44"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:19:44"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:19:50"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:19:50"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:19:50"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:19:50"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:19:50"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:20:25"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:20:25"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:20:26"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:20:26"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:20:26"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:20:53"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:20:53"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:20:54"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:20:54"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:20:54"}
+                                                                                                                                                                     {"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:20:59"}
+                                                                                                                                                                                                                                                                                                                                                                                                                            {"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:21:00"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:21:00"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:21:00"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:21:00"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:21:00"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:21:02"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:21:02"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:21:02"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:21:02"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:21:02"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:22:10"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:22:10"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:22:11"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:22:11"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:22:11"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:22:55"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:22:56"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:22:56"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:22:56"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:22:56"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:23:17"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:23:18"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:23:18"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:23:18"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:23:18"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:23:56"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:23:57"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:23:57"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:23:57"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:23:57"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:24:35"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:24:36"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:24:36"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:24:36"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:24:36"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:24:45"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:24:46"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:24:46"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:24:46"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:24:46"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:25:03"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:25:05"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:25:05"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:25:05"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:25:05"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:29:41"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:29:47"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:29:47"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:29:47"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:29:47"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:31:02"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:31:14"}
+{"cause":{},"level":"error","message":"Error connecting to the database Connection terminated due to connection timeout","stack":"Error: Connection terminated due to connection timeout\n    at /Users/15rebaseacademy/Desktop/Appointment Booking APL/Appointment-Booking-API/node_modules/pg-pool/index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async connectToDb (file:///Users/15rebaseacademy/Desktop/Appointment%20Booking%20APL/Appointment-Booking-API/src/config/db.js:36:24)\n    at async startServer (file:///Users/15rebaseacademy/Desktop/Appointment%20Booking%20APL/Appointment-Booking-API/src/bin/www:137:5)","timestamp":"2026-02-05 12:31:16"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-05 12:36:08"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-05 12:36:13"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:36:14"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-05 12:36:14"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-05 12:36:14"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:48:19"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, email, password_hash, role FROM users WHERE email = $1..., params: [\"alice.smith@clinic.com\"], duration: 670ms, rows: 1}","timestamp":"2026-02-05 12:48:19"}
+{"level":"warn","message":"Invalid password for user: alice.smith@clinic.com","timestamp":"2026-02-05 12:48:19"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:51:03"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, email, password_hash, role FROM users WHERE email = $1..., params: [\"alice.smith@clinic.com\"], duration: 426ms, rows: 1}","timestamp":"2026-02-05 12:51:03"}
+{"level":"warn","message":"Invalid password for user: alice.smith@clinic.com","timestamp":"2026-02-05 12:51:03"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 12:59:59"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, email, password_hash, role FROM users WHERE email = $1..., params: [\"jaffdavy100@gmail.com\"], duration: 7ms, rows: 1}","timestamp":"2026-02-05 12:59:59"}
+{"level":"warn","message":"Invalid password for user: jaffdavy100@gmail.com","timestamp":"2026-02-05 12:59:59"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 13:01:10"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, email, password_hash, role FROM users WHERE email = $1..., params: [\"alice.smith@clinic.com\"], duration: 6ms, rows: 1}","timestamp":"2026-02-05 13:01:10"}
+{"level":"warn","message":"Invalid password for user: alice.smith@clinic.com","timestamp":"2026-02-05 13:01:10"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 13:05:57"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, email, password_hash, role FROM users WHERE email = $1..., params: [\"alice.smith@clinic.com\"], duration: 253ms, rows: 1}","timestamp":"2026-02-05 13:05:57"}
+{"level":"info","message":"JWT generated successfully for user: alice.smith@clinic.com (ID: 731f97de-11b3-40c4-b0ff-796e8cf3c09a)","timestamp":"2026-02-05 13:05:58"}
+{"level":"error","message":"404 - Not Found - /slots","timestamp":"2026-02-05 13:13:30"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 13:14:49"}
+{"level":"info","message":"Executed query: { text: \n            INSERT INTO time_slots (provider_id, start_time, end_time) \n            VALUES ($1, $2,..., params: [\"731f97de-11b3-40c4-b0ff-796e8cf3c09a\",\"2026-02-10 09:00:00\",\"2026-02-10 10:00:00\"], duration: 605ms, rows: 1}","timestamp":"2026-02-05 13:14:49"}
+{"level":"info","message":"Slot created for provider 731f97de-11b3-40c4-b0ff-796e8cf3c09a: 2026-02-10 09:00:00 to 2026-02-10 10:00:00","timestamp":"2026-02-05 13:14:49"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 13:16:16"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, email, password_hash, role FROM users WHERE email = $1..., params: [\"kyrios@gmail.com\"], duration: 7ms, rows: 1}","timestamp":"2026-02-05 13:16:16"}
+{"level":"warn","message":"Invalid password for user: kyrios@gmail.com","timestamp":"2026-02-05 13:16:16"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 13:19:14"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, email, password_hash, role FROM users WHERE email = $1..., params: [\"kyrios@gmail.com\"], duration: 6ms, rows: 1}","timestamp":"2026-02-05 13:19:14"}
+{"level":"info","message":"JWT generated successfully for user: kyrios@gmail.com (ID: 9b28928d-d35f-4d19-8ec3-5ebea953caa9)","timestamp":"2026-02-05 13:19:14"}
+{"level":"error","message":"400 - Unexpected token 'r', \"#\" is not valid JSON - /slots/available","timestamp":"2026-02-05 13:20:28"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-05 13:21:06"}
+{"level":"info","message":"Executed query: { text: SELECT * FROM time_slots WHERE is_booked = FALSE ORDER BY start_time ASC..., params: [], duration: 985ms, rows: 1}","timestamp":"2026-02-05 13:21:07"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-06 09:34:37"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-06 09:46:57"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-06 09:51:17"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-06 10:25:27"}
