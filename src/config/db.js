@@ -17,7 +17,7 @@ const pool = new Pool({
     database: DB_NAME,
     password: DB_PASSWORD,
     port: parseInt(DB_PORT, 10),
-    connectionTimeoutMillis: 2000
+    connectionTimeoutMillis: 10000
 })
 
 logger.info(`Database is configured to connect to ${DB_NAME} at ${DB_HOST}:${DB_PORT} as user ${DB_USER}`)
