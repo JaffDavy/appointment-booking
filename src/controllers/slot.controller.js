@@ -55,3 +55,24 @@ export const createSlot = async (req, res, next) => {
         next(error);
     }
 };
+
+export const deleteSlot = async (req, res, next) => {
+    const { slot_id } = req.params;
+
+    try {
+        const slotResult = await query('SELECT provider_id from time_slots WHERE id = $1', [slot_id]);
+        if (slotResult.rows.length === 0) {
+            return res.status(404).json({ message: "Slot not found" });
+        }
+        const slot = slotResult.rows[0];
+        if (req.user.id !== slot.provider_id) {
+            return res.status(403).json({ message: "You can only delete your own slots." });
+        }
+        await query('DELETE FROM time_slots WHERE id = $1', [slot_id]);
+        logger.info(`Slot deleted: ${slot_id}`);
+        res.json({ message: "Slot deleted successfully" });
+    } catch (error) {
+        logger.error("Error deleting slot:", error);
+        next(error);
+    }
+}

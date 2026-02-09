@@ -9,6 +9,7 @@ import indexRouter from './routes/index.js';
 import usersRouter from './routes/users.js';
 import authRouter from './routes/auth.routes.js';
 import slotRoute from './routes/slot.routes.js'
+import appointmentRouter from './routes/appointment.route.js'
 
 const app = express();
 
@@ -23,6 +24,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/auth', authRouter);
 app.use('/slots', slotRoute)
+app.use('/appointments', appointmentRouter)
 
 // Catch 404
 app.use(function(req, res, next) {
