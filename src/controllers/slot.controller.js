@@ -2,7 +2,7 @@ import logger from "../utils/logger.js"
 import { query } from "../config/db.js"
 
 export async function getAvailableSlots(req, res, next) {
-    const { provider_id } = req.query;
+    const { provider_id } = req.body;
 
     try {
         let sql = `SELECT * FROM time_slots WHERE is_booked = FALSE`;

@@ -1,0 +1,534 @@
+# openapi: 3.0.0
+# info:
+#   title: Appointment Booking API
+#   description: API for managing time slots and booking appointments between clients and providers.
+#   version: 1.0.0
+
+# servers:
+#   - url: http://localhost:3000
+#     description: Local development server
+
+# components:
+#   securitySchemes:
+#     bearerAuth:
+#       type: http
+#       scheme: bearer
+#       bearerFormat: JWT
+
+#   schemas:
+#     Appointment:
+#       type: object
+#       properties:
+#         appointment_id:
+#           type: string
+#           format: uuid
+#         provider_name:
+#           type: string
+#         start_time:
+#           type: string
+#           format: date-time
+#         end_time:
+#           type: string
+#           format: date-time
+#         status:
+#           type: string
+#           example: "confirmed"
+
+# security:
+#   - bearerAuth: []
+
+# paths:
+#   /auth/register:
+#     post:
+#       summary: Register a new user
+#       tags:
+#         - Authentication
+#       requestBody:
+#         required: true
+#         content:
+#           application/json:
+#             schema:
+#               type: object
+#               properties:
+#                 name:
+#                   type: string
+#                 email:
+#                   type: string
+#                 password_hash:
+#                   type: string
+#                 role:
+#                   type: string
+#                   enum: [client, provider]
+#       responses:
+#         '201':
+#           description: User registered successfully
+#         '400':
+#           description: Bad request (e.g., missing fields, invalid role)
+
+#   /auth/login:
+#     post:
+#       summary: Authenticate user and get token
+#       tags:
+#         - Authentication
+#       requestBody:
+#         required: true
+#         content:
+#           application/json:
+#             schema:
+#               type: object
+#               properties:
+#                 email:
+#                   type: string
+#                 password:
+#                   type: string
+#       responses:
+#         '200':
+#           description: Login successful
+#           content:
+#             application/json:
+#               schema:
+#                 type: object
+#                 properties:
+#                   token:
+#                     type: string
+#                   role:
+#                     type: string
+
+#   /slots:
+#     post:
+#       summary: Create a new time slot (Providers only)
+#       tags:
+#         - Slots
+#       requestBody:
+#         required: true
+#         content:
+#           application/json:
+#             schema:
+#               type: object
+#               properties:
+#                 start_time:
+#                   type: string
+#                   format: date-time
+#                 end_time:
+#                   type: string
+#                   format: date-time
+#                 provider_id:
+#                   type: string
+#                   format: uuid
+                
+#       responses:
+#         '201':
+#           description: Slot created successfully
+#         '403':
+#           description: Not authorized (e.g., role mismatch)
+
+#   /slots/available:
+#     get:
+#       summary: Get all available time slots for booking
+#       tags:
+#         - Slots
+#       parameters:
+#         - in: query
+#           name: provider_id
+#           required: false
+#           description: Filter available slot by provider id
+#           schema:
+#             type: string
+#             format: uuid
+#       responses:
+#         '200':
+#           description: A list of available time slots
+#           content:
+#             application/json:
+#               schema:
+#                 type: array
+#                 items:
+#                   type: object
+#                   properties:
+#                     provider_id:
+#                       type: string
+#                       format: uuid
+
+#   /slots/:slot_id:
+#     delete:
+#       summary: delete a time slot (Providers only)
+#       tags:
+#         - Slots
+#       parameters:
+#         - in: paths
+#           name: slot_id
+#           required: true
+#           slot_id:
+#             type: string
+#             format: uuid
+#           responses:
+#             '200':
+#               description: Slot deleted successfully
+#               '403':
+#                 description: Not authorized (e.g role mismatch)
+#               '404':
+#                 description: Slot not found
+
+#   /appointments/list:
+#     get:
+#       summary: Get all appointments for the logged-in user
+#       description: Fetches appointments based on the user's role. Clients see provider names, and providers see client names.
+#       tags:
+#         - Appointments
+#       security:
+#         - bearerAuth: []
+#       responses:
+#         '200':
+#           description: A list of appointments
+#           content:
+#             application/json:
+#               schema:
+#                 type: array
+#                 items:
+#                   oneOf:
+#                     - $ref: '#/components/schemas/ClientAppointmentView'
+#                     - $ref: '#/components/schemas/ProviderAppointmentView'
+#         '403':
+#           description: Invalid user role or missing role in token
+#           content:
+#             application/json:
+#               example:
+#                 message: "Invalid role. Cannot fetch appointments."
+#                 debug_your_token_contents: { "user": { "id": "uuid" } }
+#         '500':
+#           description: Server error
+#           content:
+#             application/json:
+#               example:
+#                 message: "Server error"
+
+# components:
+#   schemas:
+#     ClientAppointmentView:
+#       type: object
+#       properties:
+#         id:
+#           type: string
+#           format: uuid
+#         provider_name:
+#           type: string
+#         start_time:
+#           type: string
+#           format: date-time
+#         end_time:
+#           type: string
+#           format: date-time
+#         status:
+#           type: string
+#           example: "confirmed"
+
+#     ProviderAppointmentView:
+#       type: object
+#       properties:
+#         id:
+#           type: string
+#           format: uuid
+#         client_name:
+#           type: string
+#         start_time:
+#           type: string
+#           format: date-time
+#         end_time:
+#           type: string
+#           format: date-time
+#         status:
+#           type: string
+#           example: "confirmed"
+          
+#   /appointments/book:
+#     post:
+#       summary: Book an appointment for a specific time slot (Client only)
+#       tags:
+#         - Appointments
+#       requestBody:
+#         required: true
+#         content:
+#           application/json:
+#             schema:
+#               type: object
+#               properties:
+#                 slot_id:
+#                   type: string
+#                   format: uuid
+#                 provider_id:
+#                   type: string
+#                   format: uuid
+#                 client_id:
+#                   type: string
+#                   format: uuid
+#       responses:
+#         '201':
+#           description: Appointment booked successfully
+#         '403':
+#           description: Not authorized
+#         '404':
+#           description: Slot not found
+
+#   /appointments/cancel:
+#     post:
+#       summary: Cancel an existing appointment
+#       tags:
+#         - Appointments
+#       requestBody:
+#         required: true
+#         content:
+#           application/json:
+#             schema:
+#               type: object
+#               properties:
+#                 appointment_id:
+#                   type: string
+#                   format: uuid
+#       responses:
+#         '200':
+#           description: Appointment cancelled successfully
+#         '403':
+#           description: Not authorized
+#         '404':
+#           description: Appointment not found
+
+openapi: 3.0.0
+info:
+  title: Appointment Booking API
+  description: API for managing time slots and booking appointments.
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:3000
+    description: Local development server
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  schemas:
+    ClientAppointmentView:
+      type: object
+      properties:
+        id: { type: string, format: uuid }
+        provider_name: { type: string }
+        start_time: { type: string, format: date-time }
+        end_time: { type: string, format: date-time }
+        status: { type: string, example: "confirmed" }
+    ProviderAppointmentView:
+      type: object
+      properties:
+        id: { type: string, format: uuid }
+        client_name: { type: string }
+        start_time: { type: string, format: date-time }
+        end_time: { type: string, format: date-time }
+        status: { type: string, example: "confirmed" }
+
+security:
+  - bearerAuth: []
+
+paths:
+  /auth/register:
+    post:
+      summary: Register a new user
+      tags: [Authentication]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name: { type: string }
+                email: { type: string }
+                password: { type: string }
+                role: { type: string, enum: [client, provider] }
+      responses:
+        '201': { description: Created }
+
+  /auth/login:
+    post:
+      summary: Login
+      tags: [Authentication]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email: { type: string }
+                password: { type: string }
+      responses:
+        '200': { description: Success }
+
+  /slots:
+    post:
+      summary: Create a slot (Provider only)
+      tags: [Slots]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                start_time: { type: string, format: date-time }
+                end_time: { type: string, format: date-time }
+                provider_id: { type: string, format: uuid }
+      responses:
+        '201': { description: Created }
+
+  /slots/available:
+    get:
+      summary: Get available slots
+      tags: [Slots]
+      parameters:
+        - in: query
+          name: provider_id
+          schema: { type: string, format: uuid }
+      responses:
+        '200': { description: Success }
+
+  /slots/{slot_id}:
+    delete:
+      summary: Delete a slot (Provider only)
+      tags: [Slots]
+      parameters:
+        - in: path
+          name: slot_id
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        '200': { description: Deleted }
+        '403': { description: Forbidden }
+        '404': { description: Not Found }
+
+  # /appointments/list:
+  #   get:
+  #     summary: Get user appointments
+  #     tags: [Appointments]
+  #     requestBody:
+  #       required: true
+  #       content:
+  #         application/json:
+  #           schema:
+  #             type: object
+  #             properties:
+                
+  #     responses:
+  #       '200':
+  #         description: Success
+  #         content:
+  #           application/json:
+  #             schema:
+  #               type: array
+  #               items:
+  #                 oneOf:
+  #                   - $ref: '#/components/schemas/ClientAppointmentView'
+  #                   - $ref: '#/components/schemas/ProviderAppointmentView'
+  
+  /appointments/list:
+    get:
+      summary: Get all appointments for the logged-in user
+      description: Fetches appointments based on the user's role. Clients see provider names, and providers see client names.
+      tags:
+        - Appointments
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: A list of appointments
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  oneOf:
+                    - $ref: '#/components/schemas/ClientAppointmentView'
+                    - $ref: '#/components/schemas/ProviderAppointmentView'
+        '403':
+          description: Invalid user role or missing role in token
+          content:
+            application/json:
+              example:
+                message: "Invalid role. Cannot fetch appointments."
+                debug_your_token_contents: { "user": { "id": "uuid" } }
+        '500':
+          description: Server error
+          content:
+            application/json:
+              example:
+                message: "Server error"
+
+components:
+  schemas:
+    ClientAppointmentView:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        provider_name:
+          type: string
+        start_time:
+          type: string
+          format: date-time
+        end_time:
+          type: string
+          format: date-time
+        status:
+          type: string
+          example: "confirmed"
+
+    ProviderAppointmentView:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        client_name:
+          type: string
+        start_time:
+          type: string
+          format: date-time
+        end_time:
+          type: string
+          format: date-time
+        status:
+          type: string
+          example: "confirmed"
+        
+  /appointments/book:
+    post:
+      summary: Book appointment (Client only)
+      tags: [Appointments]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                slot_id: { type: string, format: uuid }
+                provider_id: { type: string, format: uuid }
+      responses:
+        '201': { description: Booked }
+
+  /appointments/cancel:
+    post:
+      summary: Cancel appointment
+      tags: [Appointments]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                appointment_id: { type: string, format: uuid }
+      responses:
+        '200': { description: Cancelled }
