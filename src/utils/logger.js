@@ -9,7 +9,6 @@ const logDirectory = path.join(__dirname, '../logs')
 
 const { colorize, combine, timestamp, printf, errors, json } = winston.format
 
-// Custom format for Console to make it readable and colorful
 const consoleFormat = combine(
     colorize({ all: true }), 
     timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
@@ -23,13 +22,13 @@ const logger = winston.createLogger({
     format: combine(
         timestamp({ format: 'YYYY-MM-DD HH:mm:ss'}),
         errors({ stack: true}),
-        json() // Files will still save in structured JSON
+        json()
     ),
     transports: [
         new winston.transports.File({
             filename: path.join(logDirectory, 'app.log'),
             level: "info",
-            maxsize: 5242880, // 5MB
+            maxsize: 5242880,
             maxFiles: 5
         }),
         new winston.transports.File({
@@ -41,7 +40,6 @@ const logger = winston.createLogger({
     ]
 })
 
-// Console logging for development
 if (process.env.NODE_ENV !== "production") {
     logger.add(new winston.transports.Console({
         format: consoleFormat,

@@ -12,7 +12,7 @@ const authMiddleware = (req, res, next) => {
     
     try {
         const decoded = jwt.verify(token, process.env.JWT_SECRET);
-        req.user = decoded.user;
+        req.user = decoded;
         logger.debug(`Authentication middleware: Token verified for user ${req.user.id}`);
         next();
     } catch (error) {

@@ -1,5 +1,5 @@
 import express from 'express'
-import loginHandler from '../models/user.model.js'
+import loginHandler from '../controllers/auth.controller/login.controller.js'
 import { loginValidator } from '../validators/auth.validator.js'
 
 import { validate } from '../validators/auth.validator.js'

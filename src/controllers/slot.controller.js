@@ -31,9 +31,13 @@ export const createSlot = async (req, res, next) => {
             return res.status(400).json({ message: "Missing provider_id, start_time, or end_time" });
         }
 
-        if (req.user.id !== provider_id && req.user.role !== 'admin') {
-            return res.status(403).json({ message: "You can only create slots for your own account." });
-        }
+        const userId = req.user.id || (req.user.user && req.user.user.id);
+        if (userId !== provider_id) {
+        return res.status(403).json({ 
+        message: "You can only create slots for your own account.",
+        debug: { userIdInToken: userId, providerIdInBody: provider_id } 
+    });
+}
 
         const sql = `
             INSERT INTO time_slots (provider_id, start_time, end_time) 

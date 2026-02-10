@@ -1,8 +1,8 @@
+import app from '../app.js'
 import { pool } from '../config/db.js'
 
 export const bookAppointment = async (req, res) => {
-    const { slot_id, provider_id } = req.body
-    const client_id = req.user.id
+    const { client_id, slot_id, provider_id } = req.body
 
     try {
         const slotCheck = await pool.query(
@@ -35,5 +35,79 @@ export const bookAppointment = async (req, res) => {
         await pool.query('ROLLBACK')
         console.error(err)
         res.status(500).json({ message: 'Error booking appointment' })
+    }
+}
+
+export const getAppointments = async (req, res) => {
+    const userId = req.user.id || (req.user.user && req.user.user.id);
+        let userRole = req.user.role;
+    if (!userRole && req.user.user) {
+        userRole = req.user.user.role;
+    }
+    const sanitizedRole = userRole ? userRole.toLowerCase().trim() : null;
+
+    try {
+        let sql;
+        if (sanitizedRole === 'client') {
+            sql = `
+                SELECT a.id, u.name as provider_name, ts.start_time, ts.end_time, a.status
+                FROM appointments a
+                JOIN time_slots ts ON a.slot_id = ts.id
+                JOIN users u ON a.provider_id = u.id
+                WHERE a.client_id = $1`;
+        } else if (sanitizedRole === 'provider') {
+            sql = `
+                SELECT a.id, u.name as client_name, ts.start_time, ts.end_time, a.status
+                FROM appointments a
+                JOIN time_slots ts ON a.slot_id = ts.id
+                JOIN users u ON a.client_id = u.id
+                WHERE a.provider_id = $1`;
+        } else {
+            console.log("DEBUG ERROR: Full req.user object is:", JSON.stringify(req.user, null, 2));
+            return res.status(403).json({ 
+                message: "Invalid role. Cannot fetch appointments.",
+                debug_your_token_contents: req.user 
+            });
+        }
+
+        const result = await pool.query(sql, [userId]);
+        res.json(result.rows);
+
+    } catch (error) {
+        console.error("DATABASE ERROR:", error.message);
+        res.status(500).json({ message: "Server error" });
+    }
+};
+
+export const cancelAppointment = async (req, res) => {
+    const { appointment_id } = req.params
+
+    try {
+
+        const appointmentCheck = await pool.query(
+            'SELECT slot_id FROM appointments WHERE id = $1',
+            [appointment_id]
+        )
+        if (appointmentCheck.rows.length === 0) {
+            return res.status(404).json({ message: 'Appointment not found' })
+        }
+        const slot_id = appointmentCheck.rows[0].slot_id
+
+        await pool.query('BEGIN')
+
+        await pool.query(
+            'DELETE FROM appointments WHERE id = $1',
+            [appointment_id]
+        )
+        await pool.query(
+            'UPDATE time_slots SET is_booked = false WHERE id = $1',
+            [slot_id]
+        )
+        await pool.query('COMMIT')
+        res.json({ message: 'Appointment cancelled successfully' })
+    } catch (err) {
+        await pool.query('ROLLBACK')
+        console.error(err)
+        res.status(500).json({ message: 'Error cancelling appointment' })
     }
 }
