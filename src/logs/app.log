@@ -12507,3 +12507,11 @@ lÉcbÖ_y7ÃbZÿy@xM1cšâµ³ýä2¡k²-vIß¿-X¹móØ¯JDþžC{3›bðÖóŠeÐí–û¡«©U>H)×	
 {"level":"info","message":"Executed query: { text: SELECT id, email, name, password_hash, role FROM users WHERE email = $1..., params: [\"alice.smith@clinic.com\"], duration: 256ms, rows: 1}","timestamp":"2026-02-10 14:56:51"}
 {"level":"info","message":"Comparing input password with hash for user: alice.smith@clinic.com","timestamp":"2026-02-10 14:56:51"}
 {"level":"info","message":"User logged in successfully: alice.smith@clinic.com (ID: b25e3e5d-ad34-437d-807e-d818b1f85ca2)","timestamp":"2026-02-10 14:56:52"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-12 09:55:21"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-12 09:55:37"}
+{"cause":{},"level":"error","message":"Error connecting to the database Connection terminated due to connection timeout","stack":"Error: Connection terminated due to connection timeout\n    at /Users/15rebaseacademy/Desktop/Appointment Booking APL/Appointment-Booking-API/node_modules/pg-pool/index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async connectToDb (file:///Users/15rebaseacademy/Desktop/Appointment%20Booking%20APL/Appointment-Booking-API/src/config/db.js:36:24)\n    at async startServer (file:///Users/15rebaseacademy/Desktop/Appointment%20Booking%20APL/Appointment-Booking-API/src/bin/www:137:5)","timestamp":"2026-02-12 09:55:47"}
+{"level":"info","message":"Database is configured to connect to appointment_booking_db at localhost:5432 as user 15rebaseacademy","timestamp":"2026-02-12 09:57:20"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-12 09:57:28"}
+{"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-12 09:57:28"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-12 09:57:28"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-12 09:57:28"}
