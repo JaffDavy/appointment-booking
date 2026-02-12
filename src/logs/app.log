@@ -12515,3 +12515,4 @@ lÉcbÖ_y7ÃbZÿy@xM1cšâµ³ýä2¡k²-vIß¿-X¹móØ¯JDþžC{3›bðÖóŠeÐí–û¡«©U>H)×	
 {"level":"info","message":"Database client connected from Pool(Total count: 1)","timestamp":"2026-02-12 09:57:28"}
 {"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-12 09:57:28"}
 {"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-12 09:57:28"}
+{"level":"info","message":"Recieved SIGHUP","timestamp":"2026-02-12 10:10:25"}
