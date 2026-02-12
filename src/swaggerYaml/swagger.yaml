@@ -295,7 +295,10 @@
 openapi: 3.0.0
 info:
   title: Appointment Booking API
-  description: API for managing time slots and booking appointments.
+  description: API for appointments. 
+    Real-time notifications via Socket.io:
+    - Listen on 'new_appointment' for booking alerts.
+    - Join room using 'join_room' with your User ID.
   version: 1.0.0
 
 servers:
@@ -527,7 +530,7 @@ components:
         content:
           application/json:
             schema:
-              type: object
+              ty1pe: object
               properties:
                 appointment_id: { type: string, format: uuid }
       responses:

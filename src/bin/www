@@ -9,6 +9,7 @@ import deb from 'debug';
 import logger from '../utils/logger.js';
 const debug = deb('appointment-booking-api:server')
 import http from 'http';
+import { initSocket } from '../utls/socket.js'
 
 import 'dotenv/config'
 import { connectToDb } from '../config/db.js';
@@ -18,8 +19,11 @@ import { connectToDb } from '../config/db.js';
  * Get port from environment and store in Express.
  */
 
-let port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
+
+// Initialize Socket.io
+initSocket(server)
 
 /**
  * Create HTTP server.
