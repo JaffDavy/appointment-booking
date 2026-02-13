@@ -55,7 +55,7 @@ paths:
               properties:
                 name: { type: string }
                 email: { type: string }
-                password: { type: string }
+                password_hash: { type: string }
                 role: { type: string, enum: [client, provider] }
       responses:
         '201': { description: Created }
@@ -226,6 +226,7 @@ components:
               properties:
                 slot_id: { type: string, format: uuid }
                 provider_id: { type: string, format: uuid }
+                client_id: { type: string, format: uuid }
       responses:
         '201': { description: Booked }
 
