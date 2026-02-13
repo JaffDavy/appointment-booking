@@ -14112,3 +14112,7 @@ lÉcbÖ_y7ÃbZÿy@xM1cšâµ³ýä2¡k²-vIß¿-X¹móØ¯JDþžC{3›bðÖóŠeÐí–û¡«©U>H)×	
 {"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-13 14:44:35"}
 {"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-13 14:44:35"}
 {"level":"info","message":"Server is officially listening on port 3000","timestamp":"2026-02-13 14:44:35"}
+{"level":"info","message":"Database connecting via Local Config","timestamp":"2026-02-13 16:33:03"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-13 16:33:27"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-13 16:33:39"}
+{"level":"info","message":"Server is officially listening on port 3000","timestamp":"2026-02-13 16:33:39"}

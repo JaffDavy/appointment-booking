@@ -7,9 +7,12 @@ info:
     - Join room using 'join_room' with your User ID.
   version: 1.0.0
 
-servers:
-  - url: process.env.RENDER_EXTERNAL_URL || 'http://localhost:3000',
-description: process.env.RENDER_EXTERNAL_URL ? 'Production Server' : 'Local Server',
+servers: [
+  {
+    url: process.env.RENDER_EXTERNAL_URL || 'http://localhost:3000',
+    description: 'Main Server'
+  }
+]
 components:
   securitySchemes:
     bearerAuth:
