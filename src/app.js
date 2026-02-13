@@ -6,6 +6,7 @@ import logger from './utils/logger.js';
 import morgan from 'morgan';
 import swaggerUi from 'swagger-ui-express'
 import YAML from 'yamljs'
+import cors from 'cors'
 
 import indexRouter from './routes/index.js';
 import usersRouter from './routes/users.js';
