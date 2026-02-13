@@ -21,6 +21,7 @@ app.use(express.json())
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(cors());
 
 // ROUTES
 app.use('/', indexRouter);
