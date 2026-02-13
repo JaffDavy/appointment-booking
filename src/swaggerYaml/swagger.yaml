@@ -117,31 +117,7 @@ paths:
         '200': { description: Deleted }
         '403': { description: Forbidden }
         '404': { description: Not Found }
-
-  # /appointments/list:
-  #   get:
-  #     summary: Get user appointments
-  #     tags: [Appointments]
-  #     requestBody:
-  #       required: true
-  #       content:
-  #         application/json:
-  #           schema:
-  #             type: object
-  #             properties:
-                
-  #     responses:
-  #       '200':
-  #         description: Success
-  #         content:
-  #           application/json:
-  #             schema:
-  #               type: array
-  #               items:
-  #                 oneOf:
-  #                   - $ref: '#/components/schemas/ClientAppointmentView'
-  #                   - $ref: '#/components/schemas/ProviderAppointmentView'
-  
+        
   /appointments/list:
     get:
       summary: Get all appointments for the logged-in user
