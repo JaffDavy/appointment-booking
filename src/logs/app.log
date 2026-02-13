@@ -14101,3 +14101,14 @@ lÉcbÖ_y7ÃbZÿy@xM1cšâµ³ýä2¡k²-vIß¿-X¹móØ¯JDþžC{3›bðÖóŠeÐí–û¡«©U>H)×	
 {"level":"warn","message":"Login attempt failed: Incorrect password - user-1770984377178@test.com","timestamp":"2026-02-13 13:06:18"}
 {"level":"info","message":"Executed query: { text: SELECT id, email, name, password_hash, role FROM users WHERE email = $1..., params: [\"nonexistent@example.com\"], duration: 0ms, rows: 0}","timestamp":"2026-02-13 13:06:18"}
 {"level":"warn","message":"Login attempt failed: User not found - nonexistent@example.com","timestamp":"2026-02-13 13:06:18"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-13 14:42:58"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-13 14:43:00"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2026-02-13 14:43:00"}
+{"level":"info","message":"Database connecting via Local Config","timestamp":"2026-02-13 14:44:32"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-13 14:44:33"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-13 14:44:33"}
+{"level":"info","message":"Server is officially listening on port 3000","timestamp":"2026-02-13 14:44:33"}
+{"level":"info","message":"Database connecting via Local Config","timestamp":"2026-02-13 14:44:35"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2026-02-13 14:44:35"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-13 14:44:35"}
+{"level":"info","message":"Server is officially listening on port 3000","timestamp":"2026-02-13 14:44:35"}

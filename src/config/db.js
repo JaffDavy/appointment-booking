@@ -4,56 +4,52 @@ import logger from '../utils/logger.js'
 
 const { Pool } = pg
 
-const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME, DB_PORT } = process.env
+const isProduction = process.env.DATABASE_URL ? true : false;
 
-if (!DB_HOST || !DB_PASSWORD || !DB_NAME || !DB_USER || !DB_PORT ) {
-  logger.error("Database environment variables are missing! Check your .env file.")
-  process.exit(1)
-}
+const poolConfig = isProduction 
+  ? {
+      connectionString: process.env.DATABASE_URL,
+      ssl: { rejectUnauthorized: false } // Required for Render Postgres
+    }
+  : {
+      user: process.env.DB_USER,
+      password: process.env.DB_PASSWORD,
+      host: process.env.DB_HOST,
+      database: process.env.DB_NAME,
+      port: parseInt(process.env.DB_PORT, 10),
+    };
 
-const pool = new Pool({
-    user: DB_USER,
-    host: DB_HOST,
-    database: DB_NAME,
-    password: DB_PASSWORD,
-    port: parseInt(DB_PORT, 10),
-    connectionTimeoutMillis: 10000
-})
+const pool = new Pool(poolConfig);
 
-logger.info(`Database is configured to connect to ${DB_NAME} at ${DB_HOST}:${DB_PORT} as user ${DB_USER}`)
+// This log will now show the Render URL in production (with password masked)
+logger.info(`Database connecting via ${isProduction ? 'DATABASE_URL' : 'Local Config'}`);
 
-pool.on('error', (err, client) => {
-    logger.error('Unexpected error on idle client in pool', err)
-    process.exit(-1)
-})
+pool.on('error', (err) => {
+    logger.error('Unexpected error on idle client in pool', err);
+});
 
-pool.on('connect', (client) => {
-    logger.info(`Database client connected from Pool(Total count: ${pool.totalCount})`)
-})
-
-const connectToDb = async () => {
+export const connectToDb = async () => {
     try {
-        const client = await pool.connect()
-        logger.info('Successfully connected to the database')
-        client.release()
+        const client = await pool.connect();
+        logger.info('Successfully connected to the database');
+        client.release();
+    } catch (err) {
+        logger.error('Error connecting to the database', err);
+        process.exit(1); 
     }
-    catch (err) {
-        logger.error('Error connecting to the database', err)
-        process.exit(1)
-    }
-}
+};
 
-const query = async (text, params) => {
-  const start = Date.now()
+export const query = async (text, params) => {
+  const start = Date.now();
   try {
-    const response = await pool.query(text, params)
+    const response = await pool.query(text, params);
     const duration = Date.now() - start;
-    logger.info(`Executed query: { text: ${text.substring(0, 100)}..., params: ${JSON.stringify(params)}, duration: ${duration}ms, rows: ${response.rowCount}}`);
-    return response
+    logger.info(`Executed query: { duration: ${duration}ms, rows: ${response.rowCount}}`);
+    return response;
   } catch (error) {
-    logger.error(`Error executing query: { text: ${text.substring(0, 100)}..., params: ${JSON.stringify(params)}, error: ${error.message}}`);
-    throw error
+    logger.error(`Error executing query: ${error.message}`);
+    throw error;
   }
-}
+};
 
-export { pool, connectToDb, query }
+export { pool };
