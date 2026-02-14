@@ -136,22 +136,28 @@ function onListening() {
   debug('Listening on ' + bind);
 }
 
-
 const startServer = async () => {
   try {
+    // 1. Connect to DB first
     await connectToDb();
     
+    // 2. Set listeners
     server.on('error', onError);
     server.on('listening', onListening);
 
-    server.listen(port, '0.0.0.0', () => {
-      logger.info(`Server is officially listening on port ${port}`);
+    // 3. Start listening
+    // On Render, we MUST use process.env.PORT or 10000
+    const finalPort = process.env.PORT || port; 
+    
+    server.listen(finalPort, '0.0.0.0', () => {
+      console.log(`Server verified and listening on port ${finalPort}`);
     });
 
   } catch (error) {
-    logger.error('Failed during server startup process: ', error);
+    console.error('Failed during server startup process: ', error);
     process.exit(1);
   }
 };
 
-startServer()
+// IMPORTANT: Make sure this is only called ONCE at the very end
+startServer();
