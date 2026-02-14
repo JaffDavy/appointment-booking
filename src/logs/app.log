@@ -14271,3 +14271,18 @@ lÉcbÖ_y7ÃbZÿy@xM1cšâµ³ýä2¡k²-vIß¿-X¹móØ¯JDþžC{3›bðÖóŠeÐí–û¡«©U>H)×	
 {"level":"info","message":"Server is running on port 3000","timestamp":"2026-02-14 11:15:52"}
 {"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-14 11:15:52"}
 {"level":"info","message":"Server is officially listening on port 3001","timestamp":"2026-02-14 11:15:52"}
+{"level":"info","message":"Database connecting via Local Config","timestamp":"2026-02-14 11:22:51"}
+{"level":"info","message":"Attempting to Start server on port 10000","timestamp":"2026-02-14 11:22:52"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2026-02-14 11:22:52"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-14 11:22:52"}
+{"level":"info","message":"Server is officially listening on port 10000","timestamp":"2026-02-14 11:22:52"}
+{"level":"info","message":"Database connecting via Local Config","timestamp":"2026-02-14 11:22:58"}
+{"level":"info","message":"Attempting to Start server on port 10000","timestamp":"2026-02-14 11:22:58"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2026-02-14 11:22:58"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-14 11:22:58"}
+{"level":"info","message":"Server is officially listening on port 10000","timestamp":"2026-02-14 11:22:58"}
+{"level":"info","message":"Database connecting via Local Config","timestamp":"2026-02-14 11:23:01"}
+{"level":"info","message":"Attempting to Start server on port 10000","timestamp":"2026-02-14 11:23:01"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2026-02-14 11:23:01"}
+{"level":"info","message":"Successfully connected to the database","timestamp":"2026-02-14 11:23:01"}
+{"level":"info","message":"Server is officially listening on port 10000","timestamp":"2026-02-14 11:23:01"}

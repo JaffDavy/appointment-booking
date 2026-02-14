@@ -10,7 +10,7 @@ const poolConfig = isProduction
   ? {
       connectionString: process.env.DATABASE_URL,
       ssl: { rejectUnauthorized: false },
-      options: '-c statment_path=public'
+      options: '-c search_path=public'
     }
   : {
       user: process.env.DB_USER,
