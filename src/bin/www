@@ -107,13 +107,12 @@ function onError(error) {
     case 'EADDRINUSE':
       console.error(`${bind} is already in use.`);
       
-      // Stop trying after port 3010 to prevent infinite loops
-      if (typeof port === 'number' && port < 3010) {
+      if (process.env.NODE_ENV !== 'production' && typeof port === 'number' && port < 3010) {
         port++; 
         console.log(`Retrying on next available port: ${port}`);
         server.listen(port);
       } else {
-        console.error("Too many ports in use. Please kill the process running on port 3000.");
+        console.error("Critical: Port collision in production or max retries reached.");
         process.exit(1);
       }
       break;
