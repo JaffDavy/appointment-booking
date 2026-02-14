@@ -4,13 +4,12 @@ import logger from '../utils/logger.js'
 
 const { Pool } = pg
 
-const isProduction = process.env.DATABASE_URL ? true : false;
+const isProduction = process.env.NODE_ENV === 'production';
 
 const poolConfig = isProduction 
   ? {
       connectionString: process.env.DATABASE_URL,
       ssl: { rejectUnauthorized: false },
-      options: '-c search_path=public'
     }
   : {
       user: process.env.DB_USER,
@@ -22,24 +21,25 @@ const poolConfig = isProduction
 
 const pool = new Pool(poolConfig);
 
-// This log will now show the Render URL in production (with password masked)
-logger.info(`Database connecting via ${isProduction ? 'DATABASE_URL' : 'Local Config'}`);
-
-pool.on('error', (err) => {
-    logger.error('Unexpected error on idle client in pool', err);
-});
-
+/**
+ * Connects to the Database with enhanced error logging for Render
+ */
 export const connectToDb = async () => {
     try {
+        logger.info(`Attempting DB connection. Mode: ${isProduction ? 'Production' : 'Local'}`);
         const client = await pool.connect();
-        logger.info('Successfully connected to the database');
+        logger.info('✅ Successfully connected to the database');
         client.release();
     } catch (err) {
-        logger.error('Error connecting to the database', err);
+        logger.error('❌ DATABASE CONNECTION ERROR:', err.message);
+        // On Render, we want to know if it's an SSL or Authentication error
         process.exit(1); 
     }
 };
 
+/**
+ * Executes queries with performance logging
+ */
 export const query = async (text, params) => {
   const start = Date.now();
   try {
