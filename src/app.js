@@ -24,6 +24,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors());
 
+const PORT = process.env.PORT || 3000
+
+app.listen(PORT, '0.0.0.0', () => {
+  logger.info(`Server is running on port ${PORT}`)
+})
+
 // ROUTES
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

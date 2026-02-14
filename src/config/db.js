@@ -9,7 +9,8 @@ const isProduction = process.env.DATABASE_URL ? true : false;
 const poolConfig = isProduction 
   ? {
       connectionString: process.env.DATABASE_URL,
-      ssl: { rejectUnauthorized: false } // Required for Render Postgres
+      ssl: { rejectUnauthorized: false },
+      options: '-c statment_path=public'
     }
   : {
       user: process.env.DB_USER,
