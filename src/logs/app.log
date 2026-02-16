@@ -14292,3 +14292,12 @@ lÉcbÖ_y7ÃbZÿy@xM1cšâµ³ýä2¡k²-vIß¿-X¹móØ¯JDþžC{3›bðÖóŠeÐí–û¡«©U>H)×	
 {"level":"info","message":"âœ… Successfully connected to the database","timestamp":"2026-02-14 11:46:32"}
 {"level":"info","message":"Attempting DB connection. Mode: Local","timestamp":"2026-02-14 11:46:34"}
 {"level":"info","message":"âœ… Successfully connected to the database","timestamp":"2026-02-14 11:46:34"}
+{"level":"info","message":"Recieved SIGINT","timestamp":"2026-02-16 11:48:39"}
+{"level":"info","message":"Recieved SIGINT","timestamp":"2026-02-16 11:55:48"}
+{"level":"info","message":"Attempting DB connection. Mode: Local","timestamp":"2026-02-16 11:56:11"}
+{"level":"info","message":"âœ… Successfully connected to the database","timestamp":"2026-02-16 11:56:14"}
+{"level":"info","message":"ðŸš€ Server running on port 3000","timestamp":"2026-02-16 11:56:14"}
+{"level":"info","message":"Received SIGINT, shutting down gracefully","timestamp":"2026-02-16 11:57:23"}
+{"level":"info","message":"Attempting DB connection. Mode: Local","timestamp":"2026-02-16 11:57:39"}
+{"level":"info","message":"âœ… Successfully connected to the database","timestamp":"2026-02-16 11:57:40"}
+{"level":"info","message":"ðŸš€ Server running on port 3000","timestamp":"2026-02-16 11:57:40"}
