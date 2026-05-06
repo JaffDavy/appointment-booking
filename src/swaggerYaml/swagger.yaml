@@ -1,0 +1,222 @@
+openapi: 3.0.0
+info:
+  title: Appointment Booking API
+  description: API for appointments. 
+    Real-time notifications via Socket.io:
+    - Listen on 'new_appointment' for booking alerts.
+    - Join room using 'join_room' with your User ID.
+  version: 1.0.0
+
+servers:
+  - url: https://appointment-booking-ghjp.onrender.com
+    description: 'Main Server (Render)'
+  - url: http://localhost:3000
+    description: 'Local Development'
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  schemas:
+    ClientAppointmentView:
+      type: object
+      properties:
+        id: { type: string, format: uuid }
+        provider_name: { type: string }
+        start_time: { type: string, format: date-time }
+        end_time: { type: string, format: date-time }
+        status: { type: string, example: "confirmed" }
+    ProviderAppointmentView:
+      type: object
+      properties:
+        id: { type: string, format: uuid }
+        client_name: { type: string }
+        start_time: { type: string, format: date-time }
+        end_time: { type: string, format: date-time }
+        status: { type: string, example: "confirmed" }
+
+security:
+  - bearerAuth: []
+
+paths:
+  /auth/register:
+    post:
+      summary: Register a new user
+      tags: [Authentication]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name: { type: string }
+                email: { type: string }
+                password_hash: { type: string }
+                role: { type: string, enum: [client, provider] }
+      responses:
+        '201': { description: Created }
+
+  /auth/login:
+    post:
+      summary: Login
+      tags: [Authentication]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email: { type: string }
+                password: { type: string }
+      responses:
+        '200': { description: Success }
+
+  /slots:
+    post:
+      summary: Create a slot (Provider only)
+      tags: [Slots]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                start_time: { type: string, format: date-time }
+                end_time: { type: string, format: date-time }
+                provider_id: { type: string, format: uuid }
+      responses:
+        '201': { description: Created }
+
+  /slots/available:
+    get:
+      summary: Get available slots
+      tags: [Slots]
+      parameters:
+        - in: query
+          name: provider_id
+          schema: { type: string, format: uuid }
+      responses:
+        '200': { description: Success }
+
+  /slots/{slot_id}:
+    delete:
+      summary: Delete a slot (Provider only)
+      tags: [Slots]
+      parameters:
+        - in: path
+          name: slot_id
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        '200': { description: Deleted }
+        '403': { description: Forbidden }
+        '404': { description: Not Found }
+        
+  /appointments/list:
+    get:
+      summary: Get all appointments for the logged-in user
+      description: Fetches appointments based on the user's role. Clients see provider names, and providers see client names.
+      tags:
+        - Appointments
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: A list of appointments
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  oneOf:
+                    - $ref: '#/components/schemas/ClientAppointmentView'
+                    - $ref: '#/components/schemas/ProviderAppointmentView'
+        '403':
+          description: Invalid user role or missing role in token
+          content:
+            application/json:
+              example:
+                message: "Invalid role. Cannot fetch appointments."
+                debug_your_token_contents: { "user": { "id": "uuid" } }
+        '500':
+          description: Server error
+          content:
+            application/json:
+              example:
+                message: "Server error"
+
+components:
+  schemas:
+    ClientAppointmentView:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        provider_name:
+          type: string
+        start_time:
+          type: string
+          format: date-time
+        end_time:
+          type: string
+          format: date-time
+        status:
+          type: string
+          example: "confirmed"
+
+    ProviderAppointmentView:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        client_name:
+          type: string
+        start_time:
+          type: string
+          format: date-time
+        end_time:
+          type: string
+          format: date-time
+        status:
+          type: string
+          example: "confirmed"
+        
+  /appointments/book:
+    post:
+      summary: Book appointment (Client only)
+      tags: [Appointments]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                slot_id: { type: string, format: uuid }
+                provider_id: { type: string, format: uuid }
+                client_id: { type: string, format: uuid }
+      responses:
+        '201': { description: Booked }
+
+  /appointments/cancel:
+    post:
+      summary: Cancel appointment
+      tags: [Appointments]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              ty1pe: object
+              properties:
+                appointment_id: { type: string, format: uuid }
+      responses:
+        '200': { description: Cancelled }
