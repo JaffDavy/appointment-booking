@@ -9,7 +9,7 @@ import YAML from 'yamljs'
 import cors from 'cors'
 
 import indexRouter from './routes/index.js';
-import usersRouter from './routes/users.js';
+// import usersRouter from './routes/users.js';
 import authRouter from './routes/auth.routes.js';
 import slotRoute from './routes/slot.routes.js'
 import appointmentRouter from './routes/appointment.route.js'
@@ -29,7 +29,7 @@ const PORT = process.env.PORT || 3000
 
 // ROUTES
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+// app.use('/users', usersRouter);
 app.use('/auth', authRouter);
 app.use('/slots', slotRoute)
 app.use('/appointments', appointmentRouter)
