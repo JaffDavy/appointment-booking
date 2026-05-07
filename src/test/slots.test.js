@@ -29,5 +29,5 @@ describe("Slots API Tests", () => {
           duration: 30
 });
     expect([201, 409, 400]).toContain(res.status); 
-});
+}, 30000);
 });

@@ -2,18 +2,23 @@ import logger from "../utils/logger.js"
 import { query } from "../config/db.js"
 
 export async function getAvailableSlots(req, res, next) {
-    const { provider_id } = req.body;
+    const { provider_id, date } = req.query;
 
     try {
         let sql = `SELECT * FROM time_slots WHERE is_booked = FALSE`;
         const params = [];
 
         if (provider_id) {
-            sql += ` AND provider_id = $1`;
             params.push(provider_id);
+            sql += ` AND provider_id = $${params.length}`;
         }
 
-        sql += ` ORDER BY start_time ASC`;
+        if (date) {
+            params.push(date);
+            sql += ` AND date = $${params.length}`;
+        }
+
+        sql += ` ORDER BY date ASC, start_time ASC`;
 
         const result = await query(sql, params);
         res.json(result.rows);

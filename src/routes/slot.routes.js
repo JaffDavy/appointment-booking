@@ -1,12 +1,10 @@
-import express from "express"
-import { createSlot, getAvailableSlots, deleteSlot } from "../controllers/slot.controller.js"
-import authMiddleware from "../middleware/auth.middleware.js"
+import express from 'express';
+import * as slotController from '../controllers/slot.controller.js'; 
+import authMiddleware from '../middleware/auth.middleware.js';
+import { authorizeProvider } from '../middleware/role.middleware.js';
 
-const router = express.Router()
+const router = express.Router();
 
-router.post("/", authMiddleware, createSlot)
-router.delete("/:slot_id", authMiddleware, deleteSlot)
-router.get("/available", authMiddleware, getAvailableSlots)
+router.post('/', authMiddleware, authorizeProvider, slotController.createSlot);
 
-
-export default router
+export default router;
