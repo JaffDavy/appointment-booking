@@ -1,5 +1,5 @@
 import request from "supertest";
-import app from "../app";
+import app from "../app.js";
 import { pool } from "../config/db.js";
 
 const uniqueEmail = `user-${Date.now()}@test.com`;
