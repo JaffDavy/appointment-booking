@@ -1,21 +1,21 @@
 # Appointment Booking API
 
-A robust RESTful API for managing medical appointments, built with Node.js, Express, and PostgreSQL. This system handles secure user authentication and provides full documentation via Swagger.
+A robust RESTful API for managing medical appointments, built with Node.js, Express, PostgreSQL, and Prisma ORM. This system handles secure user authentication, role-based access control, and provides full interactive documentation via Swagger.
 
 ## Features
-* **Secure Authentication:** JWT-based login and registration.
-* **Password Hashing:** Uses `bcrypt` for secure storage.
-* **Database:** PostgreSQL with a optimized connection pool.
-* **API Documentation:** Interactive UI provided by Swagger/OpenAPI.
-* **Testing:** Comprehensive test suite using Jest and Supertest.
-* **Validation:** Input validation and custom error handling.
+* **Secure Authentication:** JWT-based login and registration with role-based access control (Clients vs. Providers).
+* **Database & ORM:** PostgreSQL managed efficiently through Prisma ORM with an automated schema migration path.
+* **Preconfigured Seed Data:** Instant test environment setup with a built-in provider account execution flow.
+* **API Documentation:** Interactive UI provided by Swagger/OpenAPI, fully updated and validated for all endpoints.
+* **Testing:** Comprehensive integration test suite handling critical lifecycle workflows cleanly using Jest and Supertest.
+* **Validation:** Custom input sanitization and an organized, global error-handling middleware architecture.
 
 ---
 
 ## 🛠️ Tech Stack
 * **Runtime:** Node.js (ES Modules)
 * **Framework:** Express.js
-* **Database:** PostgreSQL
+* **Database & ORM:** PostgreSQL & Prisma ORM
 * **Logging:** Winston & Morgan
 * **Security:** JSON Web Tokens (JWT) & Bcrypt
 * **Testing:** Jest & Supertest
@@ -26,36 +26,19 @@ A robust RESTful API for managing medical appointments, built with Node.js, Expr
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://git@github.com:JaffDavy/appointment-booking.git]
+   git clone [https://github.com/JaffDavy/appointment-booking.git](https://github.com/JaffDavy/appointment-booking.git)
    cd appointment-booking-api
 
-2. **Install dependencies:**
+## install dependency
+npm install
 
-  npm install
+## enviroument variables
+PORT=3000
+DATABASE_URL="postgresql://postgres:password@localhost:5432/appointment_booking_db?schema=public"
+JWT_SECRET=your_super_secret_key
 
-3. **Environment Variables:**
+## run the application 
+npm start
 
-  Create a .env file in the root directory and add:
-
-  Code snippet
-  PORT=3000
-  DB_USER=your_user
-  DB_HOST=localhost
-  DB_NAME=appointment_booking_db
-  DB_PASSWORD=your_password
-  DB_PORT=5432
-  JWT_SECRET=your_super_secret_key
-
-4. **Run the application:**
-
-  npm start
-
- **API Documentation**
-
-  Once the server is running, you can explore the interactive API documentation at:
-  👉 http://localhost:3000/api-docs
-
- **Running Tests**
-  The project uses Jest to ensure reliability. The test suite covers the full registration and login lifecycle.
-
-  npm test
+## running test
+npm test
