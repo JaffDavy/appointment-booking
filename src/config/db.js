@@ -3,6 +3,7 @@ import pg from 'pg'
 import logger from '../utils/logger.js'
 
 const { Pool } = pg
+// Render deployment sync check
 
 const isProduction = 
   process.env.NODE_ENV === 'production' || 
