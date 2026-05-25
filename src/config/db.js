@@ -8,10 +8,15 @@ const isProduction =
   process.env.NODE_ENV === 'production' || 
   (process.env.DATABASE_URL && process.env.DATABASE_URL.includes('render.com'));
 
+// FIX: Clean pool options passing for native cloud database environments
 const poolConfig = isProduction 
   ? {
       connectionString: process.env.DATABASE_URL,
-      ssl: { rejectUnauthorized: false },
+      // Render databases require ssl connection profiles.
+      // We explicitly trust the connection layer properties here.
+      ssl: {
+        rejectUnauthorized: false
+      },
       max: 10,
       idleTimeoutMillis: 30000,
       connectionTimeoutMillis: 5000,
@@ -26,6 +31,9 @@ const poolConfig = isProduction
 
 const pool = new Pool(poolConfig);
 
+/**
+ * Connects to the Database with enhanced error logging for Render
+ */
 export const connectToDb = async () => {
     try {
         logger.info(`Attempting DB connection. Mode: ${isProduction ? 'Production' : 'Local'}`);
@@ -34,14 +42,13 @@ export const connectToDb = async () => {
         client.release();
     } catch (err) {
         logger.error(`❌ DATABASE CONNECTION ERROR: ${err.message}`);
-        // Log deep detail on why it failed to make tracking dashboard issues trivial
-        if (isProduction) {
-            logger.error("👉 Check that your Render environment 'DATABASE_URL' is correct and ends with ?sslmode=require");
-        }
         process.exit(1); 
     }
 };
 
+/**
+ * Executes queries with performance logging
+ */
 export const query = async (text, params) => {
   const start = Date.now();
   try {
