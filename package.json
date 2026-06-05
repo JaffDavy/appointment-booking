@@ -3,12 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "prisma": {
-    "seed": "node prisma/seed.js"
-  },
   "scripts": {
-    "db:init": "prisma migrate dev --name init && node prisma/seed.js",
-    "postinstall": "npx prisma generate --schema=./src/prisma/schema.prisma",
     "start": "node ./src/bin/www",
     "dev": "nodemon ./src/bin/www",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
