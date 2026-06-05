@@ -17,7 +17,7 @@ describe("Auth System Tests", () => {
                .send({
                     name: "Test User",
                     email: uniqueEmail,
-                    password_hash: "password123", 
+                    password: "password123", 
                     role: "client"
                });
             expect(response.status).toBe(201);
@@ -29,7 +29,7 @@ describe("Auth System Tests", () => {
                .send({
                     name: "Duplicate User",
                     email: uniqueEmail, 
-                    password_hash: "password123",
+                    password: "password123",
                     role: "client"
                });
             expect(response.status).toBe(409); 
