@@ -22,8 +22,8 @@ model TimeSlot {
   provider_id  String
   provider     User         @relation("ProviderSlots", fields: [provider_id], references: [id])
   date         DateTime
-  start_time   String
-  end_time     String
+  start_time   DateTime
+  end_time     DateTime
   is_booked    Boolean      @default(false)
   appointment  Appointment?
 }
